@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane fx:id="deleteQuestionPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="yesButton" layoutX="294.0" layoutY="449.0" mnemonicParsing="false" onAction="#yesButtonClick" style="-fx-background-color: #598ede;" text="YES" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="20.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: #598ede;">
+            <children>
+                <Label layoutX="224.0" layoutY="9.0" prefHeight="62.0" prefWidth="352.0" text="Confirm your choice" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Label layoutX="214.0" layoutY="226.0" prefHeight="74.0" prefWidth="373.0" text="Are you sure you want to">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="300.0" prefHeight="93.0" prefWidth="324.0" text="delete your question?">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="noButton" layoutX="434.0" layoutY="449.0" mnemonicParsing="false" onAction="#noButtonClick" prefHeight="43.0" prefWidth="73.0" style="-fx-background-color: #598ede;" text="NO" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="forumContentPane" prefHeight="741.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="titlePane" prefHeight="40.0" prefWidth="805.0" style="-fx-background-color: #598ede;">
+         <children>
+            <Label layoutX="43.0" layoutY="8.0" prefHeight="31.0" prefWidth="65.0" text="Title: " textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="title" layoutX="113.0" layoutY="9.0" prefHeight="31.0" prefWidth="608.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back" fitHeight="24.0" fitWidth="25.0" layoutX="13.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="40.0" prefHeight="156.0" prefWidth="805.0">
+         <children>
+            <AnchorPane prefHeight="155.0" prefWidth="150.0">
+               <children>
+                  <AnchorPane prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #c1c8e8;">
+                     <children>
+                        <Label fx:id="quizzerName" alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="30.0" prefWidth="150.0" text="Name" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="avatar" fitHeight="100.0" fitWidth="111.0" layoutX="20.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Line endY="-54.0" layoutX="150.0" layoutY="54.0" startY="100.0" stroke="#c1c8e8" />
+            <TextArea fx:id="questionContent" editable="false" layoutX="150.0" prefHeight="125.0" prefWidth="655.0" text="Content:&#10;ads asda  hhalsd hash iaod adslln. ashdoh&#10;asdohdaso hsadhoifhao&#10;smadas hosa&#10;&#10;&#10;&#10;11">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </TextArea>
+            <AnchorPane layoutX="150.0" layoutY="126.0" prefHeight="30.0" prefWidth="655.0" style="-fx-background-color: #c1c8e8;">
+               <children>
+                  <Button fx:id="commentButton" layoutX="578.0" layoutY="2.0" mnemonicParsing="false" onAction="#commentButtonClick" text="Comment">
+                     <font>
+                        <Font name="Arial Black" size="11.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="338.0" layoutY="5.0" text="Post Time:" textFill="#666666">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="questionGoodField" layoutX="44.0" layoutY="3.0" prefHeight="24.0" prefWidth="84.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="2.0" prefHeight="19.0" prefWidth="48.0" text="Good (" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="questionGoodCounter" layoutX="59.0" layoutY="2.0" prefHeight="15.0" prefWidth="18.0" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="2.0" prefHeight="20.0" prefWidth="11.0" text=")" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="questionBadField" layoutX="146.0" layoutY="3.0" prefHeight="24.0" prefWidth="84.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="2.0" prefHeight="19.0" prefWidth="48.0" text="Bad (" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="questionBadCounter" layoutX="50.0" layoutY="2.0" prefHeight="15.0" prefWidth="18.0" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="2.0" prefHeight="20.0" prefWidth="11.0" text=")" textFill="#666666">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="questionPostTime" layoutX="427.0" layoutY="3.0" prefHeight="24.0" prefWidth="84.0" textFill="#666666">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <Line endY="-60.0" layoutX="150.0" layoutY="255.0" startX="-149.0" startY="-60.0" stroke="#c1c8e8" />
+      <AnchorPane layoutX="1.0" layoutY="195.0" prefHeight="40.0" prefWidth="805.0" style="-fx-background-color: #fbf5d9;">
+         <children>
+            <Label alignment="CENTER" layoutY="5.0" prefHeight="30.0" prefWidth="150.0" text="Reviewer" textAlignment="CENTER" textFill="#666666">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="400.0" layoutY="5.0" prefHeight="30.0" prefWidth="96.0" text="Discussion" textAlignment="CENTER" textFill="#666666">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="replyPane" layoutY="235.0" prefHeight="506.0" prefWidth="805.0" />
+   </children>
+</AnchorPane>

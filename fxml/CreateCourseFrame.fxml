@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateFrameController">
+   <children>
+      <Label layoutX="286.0" prefHeight="77.0" prefWidth="323.0" text="Create your course" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="91.0" prefHeight="55.0" prefWidth="104.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" layoutX="307.0" layoutY="106.0" prefHeight="26.0" prefWidth="338.0" />
+      <Label layoutX="155.0" layoutY="149.0" prefHeight="55.0" prefWidth="78.0" text="Type:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Type" layoutX="307.0" layoutY="163.0" prefHeight="26.0" prefWidth="338.0" />
+      <Label layoutX="155.0" layoutY="219.0" prefHeight="42.0" prefWidth="78.0" text="Note:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="307.0" layoutY="227.0" prefHeight="26.0" prefWidth="338.0" />
+      <Label layoutX="155.0" layoutY="385.0" prefHeight="42.0" prefWidth="125.0" text="Describiton:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Describition" layoutX="307.0" layoutY="383.0" prefHeight="62.0" prefWidth="396.0" />
+      <Label layoutX="155.0" layoutY="445.0" prefHeight="50.0" prefWidth="141.0" text="Course Image:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="image" layoutX="307.0" layoutY="457.0" prefHeight="26.0" prefWidth="338.0" />
+      <Button fx:id="imagebutton" layoutX="703.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#button_clicked" prefHeight="26.0" prefWidth="71.0" text="image" />
+      <Button layoutX="344.0" layoutY="694.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="42.0" prefWidth="104.0" text="Submit" />
+      <Label fx:id="Mark" layoutX="307.0" layoutY="654.0" prefHeight="30.0" prefWidth="412.0" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="drag" layoutX="286.0" layoutY="508.0" onDragDetected="#Drag_detected_event" onDragDropped="#Drag_drop_event" onDragOver="#Drag_enter_event" prefHeight="107.0" prefWidth="402.0" style="-fx-border-color: white;">
+         <children>
+            <Label layoutX="31.0" layoutY="14.0" prefHeight="36.0" prefWidth="112.0" text="drag your file" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="time" layoutX="307.0" layoutY="285.0" prefWidth="150.0" />
+      <Label layoutX="155.0" layoutY="275.0" prefHeight="42.0" prefWidth="125.0" text="Time:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="337.0" prefHeight="27.0" prefWidth="158.0" text="Personal Course:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Personal" layoutX="307.0" layoutY="336.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

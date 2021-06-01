@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="a" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="760.0" minWidth="806.0" prefHeight="775.0" prefWidth="806.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PracticeMainFrameController">
+   <children>
+      <AnchorPane fx:id="b" layoutX="5.0" layoutY="68.0" maxHeight="273.0" maxWidth="850.0" minHeight="199.0" minWidth="799.0" prefHeight="214.0" prefWidth="799.0" style="-fx-background-color: black;" />
+      <AnchorPane fx:id="c" layoutX="1.0" layoutY="370.0" minHeight="392.0" minWidth="799.0" prefHeight="392.0" prefWidth="799.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="45.0" layoutY="8.0" prefHeight="45.0" prefWidth="792.0" text="  In order to adapt to the regulation of keeping social distance in the epidemic situation, the gym " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="43.0" prefHeight="45.0" prefWidth="780.0" text="has changed from offline operation to online operation.Coaches and  members should log in to" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="78.0" prefHeight="45.0" prefWidth="825.0" text="the gym system through their own accounts and passwords.There will be teaching videos of football" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="114.0" prefHeight="45.0" prefWidth="799.0" text="yuga and so on.Coaches can teach fitness and upload videos at home. And they can communicate with" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="151.0" prefHeight="45.0" prefWidth="799.0" text="fitness members online and make specific plans according to their goals.Coaches can also see their own" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="195.0" prefHeight="34.0" prefWidth="807.0" text="daily course table." textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="230.0" prefHeight="34.0" prefWidth="819.0" text="       Members can exercise at home and join their favorite coach's courses so that they could watch " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="264.0" prefHeight="34.0" prefWidth="799.0" text="his videos online.Fitness members can upgrade  VIP by subscribing to more courses.Here, members" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="298.0" prefHeight="34.0" prefWidth="799.0" text="and coaches can ask questions in the forum or answer questions.This will be a good platform for every " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="332.0" prefHeight="34.0" prefWidth="231.0" text="fitness people." textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="144.0" layoutY="14.0" prefHeight="54.0" prefWidth="736.0" text="Workout after work, Strengthen your strength" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
